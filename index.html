@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Терёхин Кирилл</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<button id="openModal" class="modalButton">Открыть</button>
+<div class="wrapper">
+    <div class="friend">
+        <h2 class="friend__header">
+            <div class="modal__close"></div>
+            Выберите друзей
+        </h2>
+        <div class="friend__search_row row">
+            <div class="friend__search_col col6">
+                <input type="text" placeholder="Начните вводить имя друга" id="searchLeft" class="friend__search friend__search_left" data-id="left">
+            </div>
+            <div class="friend__search_col col6">
+                <input type="text" placeholder="Начните вводить имя друга" id="searchRight" class="friend__search friend__search_right" data-id="right">
+            </div>
+        </div>
+        <div class="friend__group_row row">
+            <div class="friend__group_col col6">
+                <h3 class="friend__group_header">Ваши друзья</h3>
+                <div class="friend__group_content">
+                    <ul class="friend__group-list friend__group-list_left"></ul>
+                </div>
+            </div>
+            <div class="friend__group_col col6">
+                <h3 class="friend__group_header">Друзья в списке</h3>
+                <div class="friend__group_content">
+                    <ul class="friend__group-list friend__group-list_right"></ul>
+                </div>
+            </div>
+        </div>
+        <footer class="friend__footer">
+            <button type="button" id="friendSave" class="footer__button">Сохранить</button>
+            <button type="button" id="friendReset" class="footer__button">Сбросить</button>
+        </footer>
+    </div>
+</div>
+<script src='https://vk.com/js/api/openapi.js' type="text/javascript"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
